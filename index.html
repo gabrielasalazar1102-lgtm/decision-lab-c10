@@ -78,7 +78,7 @@ $('addStage').onclick=()=>{stages.push({metric:'max',keep:1});render();};
 $('resetStages').onclick=()=>{stages=[{metric:'max',keep:2},{metric:'emv',keep:1}];render();};
 $('load').onclick=()=>load($('examples').value);$('print').onclick=()=>window.print();
 $('transpose').onclick=()=>{let old=copy(model);model={unit:old.unit,states:old.alts.map(a=>({name:a.name,p:100/old.alts.length})),alts:old.states.map((s,j)=>({id:j+1,name:s.name,v:old.alts.map(a=>a.v[j])}))};render();};
-$('setAi').onclick=()=>{let val=$('aiInput').value.trim();try{let u=new URL(val);if(!['http:','https:'].includes(u.protocol))throw 0;$('aiLink').href=u.href;$('aiLink').hidden=false;$('aiLink').textContent='Open AI development conversation ↗';}catch(e){alert('Please paste a valid public http(s) share link.');}};
+
 load('city');
 </script>
 </body></html>
