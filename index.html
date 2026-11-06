@@ -33,8 +33,11 @@ button,select,input{font:inherit}button{background:white;border:1px solid var(--
 <section class="panel full"><div class="kicker">04 · Staged filtering</div><h2>Apply decision rules in sequence</h2><p class="sub">Each stage evaluates only the alternatives that survived the preceding stage. Eliminated alternatives never re-enter. All alternatives tied at the cutoff survive, in their original input order.</p><div id="stages"></div><div class="rowtools"><button class="primary" id="addStage">＋ Add stage</button></div><div id="filterOutput"></div></section>
 <section class="panel full"><div class="kicker">05 · Process visualization</div><h2>Staged-filtering flow diagram</h2><p class="sub">Solid downward arrows connect the survivors to the next stage. Side branches show the alternatives eliminated at each stage.</p><div class="flow" id="flow" aria-live="polite"></div></section>
 <section class="panel full"><div class="kicker">06 · AI development record</div><h2>AI conversation used to develop this webpage</h2><p class="sub">The published webpage must contain a working, publicly accessible link to the AI conversation used during development.</p>
-<div class="linkrow"><input id="aiInput" type="url" placeholder="Paste your ChatGPT shared-conversation URL here"><button class="primary" id="setAi">Add AI conversation link</button><a id="aiLink" target="_blank" rel="noopener" hidden>Open AI development conversation ↗</a></div>
-<p class="sub" style="margin-top:9px">Before publishing, paste the share link for this conversation. The link is inserted into this page's visible hyperlink. Verify that the shared conversation can be opened without signing in.</p></section>
+<div class="linkrow">
+<a href="https://chatgpt.com/share/6aed19e9-1b64-83e9-b67e-40b90e88bb9c" target="_blank" rel="noopener">Open AI conversation 1 ↗</a>
+<a href="https://chatgpt.com/share/6aed19f5-93c8-83e9-9439-8c0c55b485e6" target="_blank" rel="noopener">Open AI conversation 2 ↗</a>
+</div>
+<p class="sub" style="margin-top:9px">These publicly shared ChatGPT conversations document the AI assistance used during the development of this webpage.</p></section>
 </div><div class="footer">Decision Lab · Grade 10 C10 Practice · Interactive calculations and visualizations</div></main>
 <script>
 const $=id=>document.getElementById(id), TOL=1e-9;
